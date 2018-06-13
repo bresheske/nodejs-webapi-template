@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-webapi-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc index.ts test/main.ts --lib ES2015",
+    "watch": "npm run tsc -- -w",
+    "test": "mocha test/main.js",
+    "dev": "concurrently \"npm run watch\"  \"nodemon\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bresheske/nodejs-webapi-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bresheske/nodejs-webapi-template/issues"
+  },
+  "homepage": "https://github.com/bresheske/nodejs-webapi-template#readme",
+  "dependencies": {
+    "@types/node": "^10.3.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "concurrently": "^3.5.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5"
+  }
+}
